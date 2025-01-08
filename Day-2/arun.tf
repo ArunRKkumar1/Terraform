@@ -24,7 +24,12 @@ provider "aws" {
 
 # Here we define azure provider. 
 
-
+provider "azurerm" {
+  subscription_id = "your-azure-subscription-id"
+  client_id = "your-azure-client-id"
+  client_secret = "your-azure-client-secret"
+  tenant_id = "your-azure-tenant-id"
+}
 
 
 # 3. In your other Terraform configuration files, you can then use the aws and azurerm
